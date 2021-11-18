@@ -6,10 +6,10 @@ function mapping(){
     link_path=$2;
 
     # Old config files evac.
-    if [ -e ${link_path} ]; then
+    if [[ -e ${link_path} ]]; then
         mv ${link_path} ${link_path}.old
     fi
-    
+
     ln -s $file_path $link_path
 }
 
