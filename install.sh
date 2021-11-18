@@ -9,4 +9,5 @@ fi
 # Links
 SHELL_PATH=`pwd -P`
 ln -s ${SHELL_PATH}/bashrc ~/.bashrc
+ln -s ${SHELL_PATH}/bashrc ~/.bash_profile
 ln -s ${SHELL_PATH}/tmux.conf ~/.tmux.conf
