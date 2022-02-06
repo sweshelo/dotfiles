@@ -1,3 +1,6 @@
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
 lime='\[\033[1;32m\]';
 green='\[\033[36m\]';
 white='\[\033[00m\]';
