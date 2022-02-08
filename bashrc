@@ -8,5 +8,7 @@ PS1="${lime}\u@\h${white} : ${green}\W\$( __git_ps1 )\n\$${white} "
 
 alias ls='ls --color=auto'
 alias la='ls -la'
+alias ..='cd ..'
+alias l='ls -l'
 
 export PATH=$PATH:/usr/local/bin
