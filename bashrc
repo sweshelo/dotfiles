@@ -11,4 +11,6 @@ alias la='ls -la'
 alias ..='cd ..'
 alias l='ls -l'
 
+./.keymap.sh &
+
 export PATH=$PATH:/usr/local/bin
