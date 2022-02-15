@@ -31,3 +31,5 @@ mapping ${SHELL_PATH}/bashrc ~/.bashrc
 mapping ${SHELL_PATH}/bashrc ~/.bash_profile
 mapping ${SHELL_PATH}/tmux.conf ~/.tmux.conf
 mapping ${SHELL_PATH}/keymap.sh ~/.keymap.sh
+
+git config --global core.excludesFile ${SHELL_PATH}/gitignore
