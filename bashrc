@@ -11,4 +11,22 @@ alias la='ls -la'
 alias ..='cd ..'
 alias l='ls -l'
 
-export PATH=$PATH:/usr/local/bin
+export JAVA_HOME=/opt/jdk-17.0.2
+export PATH=$PATH:/usr/local/bin:/opt/jdk-17.0.2/bin
+. "$HOME/.cargo/env"
+
+# neovide
+export NEOVIDE_MULTIGRID=true
+export NEOVIDE_FRAMELESS=true
+
+function nvim(){
+  echo "Which do you want to launch?"
+  echo "(d) Neovide"
+  echo "(m) NeoVIM"
+  read -p "type:" APP
+  case $APP in
+    "d" ) neovide ;;
+    "m" ) neovim ;;
+    * ) neovim ;;
+  esac
+}
