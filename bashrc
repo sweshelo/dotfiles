@@ -19,14 +19,6 @@ export PATH=$PATH:/usr/local/bin:/opt/jdk-17.0.2/bin
 export NEOVIDE_MULTIGRID=true
 export NEOVIDE_FRAMELESS=true
 
-function nvim(){
-  echo "Which do you want to launch?"
-  echo "(d) Neovide"
-  echo "(m) NeoVIM"
-  read -p "type:" APP
-  case $APP in
-    "d" ) neovide ;;
-    "m" ) neovim ;;
-    * ) neovim ;;
-  esac
-}
+# Deno
+export DENO_INSTALL="/home/sw/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
