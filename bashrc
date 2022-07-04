@@ -6,6 +6,8 @@ green='\[\033[36m\]';
 white='\[\033[00m\]';
 PS1="${lime}\u@$(hostname)${white} : ${green}\W\$( __git_ps1 )\n\$${white} "
 
+export GIT_EMAIL=root@sweshelo.jp
+
 alias ls='ls --color=auto'
 alias la='ls -la'
 alias ..='cd ..'
