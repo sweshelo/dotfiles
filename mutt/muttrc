@@ -1,0 +1,4 @@
+auto_view text/x-vcard text/html text/enriched
+set mailcap_path=~/.mutt/mailcap
+set editor=`which nvim`
+set from='root@sweshelo.jp'
