@@ -34,3 +34,15 @@ mapping ${SHELL_PATH}/keymap.sh ~/.keymap.sh
 mapping ${SHELL_PATH}/mutt ~/.mutt
 
 git config --global core.excludesFile ${SHELL_PATH}/gitignore
+
+# fisher
+if fish --version &> /dev/null ; then
+  echo 'fish is already installed.'
+  FISH_INSTALLED=true
+else
+  sudo apt install fish && FISH_INSTALLED=true
+fi
+
+if $FISH_INSTALLED ; then
+  curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+fi
