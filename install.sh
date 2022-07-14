@@ -19,16 +19,6 @@ if [ ! -d ~/.config/nvim ]; then
     git clone https://github.com/sweshelo/nvimrc ~/.config/nvim/
 fi
 
-# Old config files evac.
-
-# Links
-SHELL_PATH=`pwd -P`
-mapping ${SHELL_PATH}/bashrc ~/.bashrc
-mapping ${SHELL_PATH}/bashrc ~/.bash_profile
-mapping ${SHELL_PATH}/tmux.conf ~/.tmux.conf
-mapping ${SHELL_PATH}/keymap.sh ~/.keymap.sh
-mapping ${SHELL_PATH}/mutt ~/.mutt
-
 git config --global core.excludesFile ${SHELL_PATH}/gitignore
 
 # fisher
@@ -45,3 +35,12 @@ if $FISH_INSTALLED ; then
 fi
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
+# Links
+# Old config files evac.
+SHELL_PATH=`pwd -P`
+mapping ${SHELL_PATH}/bashrc ~/.bashrc
+mapping ${SHELL_PATH}/bashrc ~/.bash_profile
+mapping ${SHELL_PATH}/tmux.conf ~/.tmux.conf
+mapping ${SHELL_PATH}/keymap.sh ~/.keymap.sh
+mapping ${SHELL_PATH}/mutt ~/.mutt
