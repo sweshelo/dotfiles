@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# git branch
-wget --no-check-certificate https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
-wget --no-check-certificate https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ~/.git-prompt.sh
-
 # function
 function mapping(){
     file_path=$1;
@@ -44,5 +40,8 @@ else
 fi
 
 if $FISH_INSTALLED ; then
-  curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+  fish -c 'curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher'
+  fish -c 'fisher install oh-my-fish/theme-bobthefish'
 fi
+
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
