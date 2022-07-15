@@ -145,3 +145,8 @@ fi
 if [[ -f ~/.Xmodmap ]] ; then
   xmodmap ~/.Xmodmap
 fi
+
+case $- in
+    *i*) exec fish;;
+      *) return;;
+esac
