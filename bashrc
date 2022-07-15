@@ -146,6 +146,10 @@ if [[ -f ~/.Xmodmap ]] ; then
   xmodmap ~/.Xmodmap
 fi
 
+if [[ -f ~/z ]] ; then
+  . ~/z/z.sh
+fi
+
 case $- in
     *i*) exec fish;;
       *) return;;
