@@ -89,10 +89,6 @@ repo = 'leafgarland/typescript-vim'
 [[plugins]]
 repo = 'coc-extensions/coc-powershell'
 
-# github copilot
-[[plugins]]
-repo = 'github/copilot.vim'
-
 # fuzzy finder
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
