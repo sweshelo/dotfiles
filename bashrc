@@ -142,6 +142,11 @@ if [[ -e $HOME/.deno ]] ; then
   export PATH="$DENO_INSTALL/bin:$PATH"
 fi
 
+# Go
+if [[ -e /usr/local/go ]] ; then
+  export PATH=$PATH:/usr/local/go
+fi
+
 if [[ -f ~/.Xmodmap ]] ; then
   xmodmap ~/.Xmodmap
 fi
@@ -150,7 +155,7 @@ if [[ -f ~/z ]] ; then
   . ~/z/z.sh
 fi
 
-case $- in
-    *i*) exec fish;;
-      *) return;;
-esac
+#case $- in
+#    *i*) exec fish;;
+#      *) return;;
+#esac
