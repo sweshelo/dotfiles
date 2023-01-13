@@ -144,7 +144,7 @@ fi
 
 # Go
 if [[ -e /usr/local/go ]] ; then
-  export PATH=$PATH:/usr/local/go
+  export PATH=$PATH:/usr/local/go/bin
 fi
 
 if [[ -f ~/.Xmodmap ]] ; then
